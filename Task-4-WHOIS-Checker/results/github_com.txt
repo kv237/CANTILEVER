@@ -1,0 +1,16 @@
+WHOIS DOMAIN INFORMATION
+============================================================
+
+Domain: GITHUB.COM
+
+Registrar: MarkMonitor, Inc.
+
+Creation Date: 2007-10-09 18:20:50
+
+Expiration Date: 2026-10-09 18:20:50
+
+Name Servers: DNS1.P08.NSONE.NET, DNS2.P08.NSONE.NET, DNS3.P08.NSONE.NET, DNS4.P08.NSONE.NET, NS-1283.AWSDNS-32.ORG, NS-1707.AWSDNS-21.CO.UK, NS-421.AWSDNS-52.COM, NS-520.AWSDNS-01.NET
+
+Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited, clientTransferProhibited https://icann.org/epp#clientTransferProhibited, clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited, clientUpdateProhibited (https://www.icann.org/epp#clientUpdateProhibited), clientTransferProhibited (https://www.icann.org/epp#clientTransferProhibited), clientDeleteProhibited (https://www.icann.org/epp#clientDeleteProhibited)
+
+============================================================
