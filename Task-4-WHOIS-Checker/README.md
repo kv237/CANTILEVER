@@ -70,3 +70,41 @@ Task-4-WHOIS-Checker/
     ├── whois_results.csv
     ├── google_com.txt
     └── github_com.txt
+
+---
+# 🔄 Application Workflow
+
+The WHOIS Domain Information Checker follows the workflow below:
+
+```text
+              User
+                │
+                ▼
+        Enter Domain Name
+                │
+                ▼
+        Validate Domain
+                │
+        ┌───────┴───────┐
+        │               │
+      Valid           Invalid
+        │               │
+        ▼               ▼
+   WHOIS Lookup      Show Error
+        │
+        ▼
+ Retrieve Information
+        │
+        ├── Domain
+        ├── Registrar
+        ├── Creation Date
+        ├── Expiration Date
+        ├── Name Servers
+        └── Status
+                │
+                ▼
+         Display Results
+                │
+        ┌───────┴───────┐
+        ▼               ▼
+   CSV Report       TXT Report
