@@ -1,61 +1,55 @@
-# Cantilever Cybersecurity Internship — Task 1
+# 📚 Cantilever Cybersecurity Internship — Task 1
 
-## Ecommerce Web Scraping and Product Search
+## E-Commerce Web Scraping and Product Search
 
-This project is completed as part of the Cantilever Cybersecurity Internship.
+This project was completed as part of the **Cantilever Cybersecurity Internship**.
 
-The objective of this task is to scrape product information from an ecommerce website, store the collected data, implement product search functionality, and provide a simple web interface using Flask.
+The objective of this task was to build a Python-based web scraping application that collects product information from an e-commerce website, stores the collected data in CSV format, provides product search functionality, and displays search results through a Flask web interface.
 
-## Features
+---
 
-- Scrapes ecommerce product information
-- Extracts product title
-- Extracts product price
-- Extracts product rating
-- Extracts product description
-- Stores scraped data in CSV format
-- Searches products by title
-- Displays search results through a Flask web interface
-- Provides links to the original product pages
+## 🎯 Objectives
 
-## Technologies Used
+The main objectives of this task were:
 
-- Python 3
-- Requests
-- BeautifulSoup4
-- Pandas
-- Flask
-- HTML
-- CSS
-- Git and GitHub
+- Scrape product information from an e-commerce website.
+- Extract product titles and prices.
+- Extract product ratings.
+- Extract product descriptions from individual product pages.
+- Store the collected information in CSV format.
+- Implement product search functionality.
+- Create a simple web interface using Flask.
+- Provide links to the original product pages.
+- Organize the project using a clean and maintainable structure.
 
-## Website Used
+---
 
-The project uses **Books to Scrape**, a demo website specifically intended for web scraping practice.
+## 🌐 Website Used
 
-Website:
+The project uses **Books to Scrape**, a demo website specifically designed for web scraping practice.
 
+**Website:**  
 https://books.toscrape.com/
 
-The website itself states that it is a demo website for scraping purposes.
+The website provides publicly accessible sample book data for educational web scraping purposes.
 
-## Project Structure
+---
+
+## ✨ Features
+
+### Web Scraping
+
+The scraper collects:
+
+- Product title
+- Product price
+- Product rating
+- Product description
+- Product URL
+
+### Data Storage
+
+The scraped information is stored in:
 
 ```text
-Task-1-Web-Scraping/
-│
-├── app.py
-├── scraper.py
-├── search.py
-├── README.md
-├── requirements.txt
-├── .gitignore
-│
-├── data/
-│   └── products.csv
-│
-├── templates/
-│   └── index.html
-│
-└── venv/
-```
+data/products.csv
