@@ -6,7 +6,7 @@
   <a href="https://github.com/kv237">
     <img src="https://img.shields.io/badge/GitHub-kv237-181717?style=for-the-badge&logo=github" alt="GitHub">
   </a>
-  <a href="YOUR_LINKEDIN_URL">
+  <a href="https://www.linkedin.com/in/chinlal-krishna-vamshi-030751412">
     <img src="https://img.shields.io/badge/LinkedIn-Profile-0A66C2?style=for-the-badge&logo=linkedin" alt="LinkedIn">
   </a>
   <a href="mailto:kv8304406@gmail.com">
