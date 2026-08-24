@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Product Search</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 30px;
+      background: #f4f4f4;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .search-box {
+      display: flex;
+      justify-content: center;
+      margin: 25px 0;
+    }
+
+    input {
+      width: 60%;
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      padding: 12px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .results {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,
+          minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .product {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .product h2 {
+      font-size: 20px;
+    }
+
+    .price {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .rating {
+      margin: 10px 0;
+    }
+
+    .description {
+      color: #555;
+      line-height: 1.5;
+    }
+
+    .no-results {
+      text-align: center;
+      font-size: 18px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>📚 Product Search</h1>
+
+    <form method="GET" action="/">
+
+      <div class="search-box">
+
+        <input type="text" name="search" placeholder="Search for a product..." value="{{ search }}">
+
+        <button type="submit">
+          Search
+        </button>
+
+      </div>
+
+    </form>
+
+
+    {% if products %}
+
+    <div class="results">
+
+      {% for product in products %}
+
+      <div class="product">
+
+        <h2>
+          {{ product.Title }}
+        </h2>
+
+        <div class="price">
+          {{ product.Price }}
+        </div>
+
+        <div class="rating">
+          ⭐ Rating: {{ product.Rating }}
+        </div>
+
+        <div class="description">
+          {{ product.Description[:300] }}...
+        </div>
+
+        <br>
+
+        <a href="{{ product.URL }}" target="_blank">
+          View Product
+        </a>
+
+      </div>
+
+      {% endfor %}
+
+    </div>
+
+    {% elif search %}
+
+    <div class="no-results">
+      No products found for "{{ search }}"
+    </div>
+
+    {% endif %}
+
+  </div>
+
+</body>
+
+</html>
